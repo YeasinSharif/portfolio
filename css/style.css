@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body {
+    font-family: 'Playfair Display',serif;
+    font-family: 'Poppins',sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.form-control:focus {
+    box-shadow: none;
+
+}
+ul,ol {
+    list-style: none;
+}
+a:hover {
+    text-decoration: none;
+    outline: none;
+    
+}
+
+:root {
+    --hlt-clr: #676CDB;
+    --text-white: #FFFFFF;
+}
+.btn:focus {
+    box-shadow: none;
+}
+
+/* nav section starts here */
+#navsection h2 {
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar-nav li {
+    padding: 12px 15px;
+}
+.navbar-nav li a {
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 20px;
+    transition: all linear 0.3s;
+    color: var(--text-white);
+
+}
+.navbar-nav li a:hover {
+    color: var(--hlt-clr);
+}
+#navsection button {
+    background-color: var(--hlt-clr);
+    color: var(--text-white);
+}
+
+/* nav section ends here */
+
+/* banner section starts here */
+#banner {
+    height: 700px;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+}
+#navsection {
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+}
+
+.banner-content h1,h2 {
+    font-family: 'Playfair Display',
+    serif;
+    font-size: 87px;
+    color: var(--text-white);
+    
+}
+
+.banner-content p {
+    width: 402px;
+    font-size: 20px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    font-family: 'Poppins',
+    sans-serif;
+}
+.banner-content p span {
+    color: var(--text-white);
+}
+
+.banner-content a {
+    font-family: 'Poppins',
+    sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--text-white);
+    transition: all linear 0.3s;
+    border-radius: 5px;
+    padding: 12px;
+    display: inline-block;
+}
+.banner-content .button-first {
+    background-color: var(--hlt-clr);
+}
+.banner-content a span {
+    text-decoration: underline;
+}
+.banner-content a  i {
+    font-size: 18px;
+    transition: all linear 0.3s;
+    color: var(--text-white);
+}
+
+.banner-content a:hover {
+    
+    background-color: var(--hlt-clr);
+    color: var(--text-white);
+}
+.banner-content a:hover i {
+    color: var(--text-white);
+    
+}
+.banner-content .button-first:hover {
+    background: none;
+    
+}
+
+/* banner section ends here */
+
+/* skill section starts here */
+#skill {
+    height: 200px;
+    background-color: #000000;
+}
+#skill i {
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+/* skill section ends here */
+
+/* freelance section starts here */
+#freelance {
+    background-color: #222A36;
+}
+#freelance h2 {
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--hlt-clr);
+}
+#freelance h3 {
+    font-family: 'Playfair Display',
+    serif;
+    font-size: 40px;
+    color: var(--text-white);
+    font-weight: 700;
+}
+#freelance .free h3 {
+    font-family: 'Poppins',
+    sans-serif;
+    line-height: 180%;
+    
+}
+#freelance .box-items i {
+    color: #000000;
+    font-size: 20px;
+    transition: all linear 0.3s;
+}
+#freelance .box-items p {
+    font-size: 20px;
+    color: var(--text-white);
+    width: 105px;
+    line-height: 20px;
+    padding-bottom: 25px;
+    color: #000000;
+    font-weight: 700;
+    transition: all linear 0.3s;
+    
+}
+#freelance .box-items .box {
+    width: 32%;
+    height: 290px;
+    background-color: #C4C4C4;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+#freelance .free {
+    padding: 90px 0px;
+}
+#freelance .box-items .box:hover {
+    background: var(--hlt-clr);
+    color: var(--text-white);
+    transform: scaleY(1.1);
+}
+#freelance .box-items .box:hover i,
+#freelance .box-items .box:hover p {
+    color: var(--text-white);
+}
+
+/* freelance section ends here */
+
+/* slider starts here */
+#slider {
+    background-color: #222a36dc;
+    height: 650px;
+}
+
+#slider .slider_text p {
+    font-family: 'Poppins',
+    sans-serif;
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 154%;
+}
+.slider_text {
+
+    position: relative;
+    padding-top: 50px;
+}
+#slider .slider_text h2 {
+    position: absolute;
+    color: #C4C4C4;
+    font-family: 'Playfair Display',
+        serif;
+    font-weight: 700;
+    font-size: 100px;
+    top: -14px;
+}
+#slider .client h2 {
+    font-family: 'Playfair Display',
+    serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-white);
+    line-height: 120%;
+}
+#slider .client span {
+    font-family: 'Playfair Display',
+    serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--hlt-clr);
+}
+.client {
+    padding-left: 100px;
+}
+.arrow1 {
+    position: absolute;
+
+
+    z-index: 10;
+    font-size: 24px;
+    cursor: pointer;
+    
+    color: var(--hlt-clr);
+    transition: all linear 0.3s;
+    bottom: 6px;
+    left: 45%;
+    transform: translateX(-50%);
+}
+.arrow2 {
+    position: absolute;
+
+
+    z-index: 10;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--hlt-clr);
+    transition: all linear 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 6px;
+}
+
+/* slider ends here */
+
+/* connect section starts here */
+#connect {
+    background-color: #000000;
+    height: 500px;
+}
+
+#connect .lets h2 {
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--text-white);
+    margin-top: 100px;
+
+}
+#connect .icons {
+    margin-top: 20px;
+}
+
+#connect .icons i {
+    color: var(--text-white);
+    font-size: 20px;
+    padding: 0px 28px;
+    cursor: pointer;
+}
+.icons img {
+    cursor: pointer;
+}
+.form label {
+    display: block;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form textarea {
+    width: 206px;
+    font-size: 20px;
+    font-weight: 500;
+    background: 0;
+    border: 0;
+    color: var(--text-white);
+    
+}
+.form {
+    width: 250px;
+    background: 0;
+    color: var(--text-white);
+    border: 0;
+}
+.form button {
+    margin-top: 25px;
+    background: 0;
+    outline: 0;
+    border: 0;
+    color: var(--hlt-clr);
+    font-size: 20px;
+    font-weight: 500;
+}
+.form input {
+    background: 0;
+    border: 0;
+    color: var(--text-white);
+}
+
+
+/* connect section ends here */
+
+/* copyright starts here */
+#copyright {
+    background-color: #000000;
+    height: 50px;
+    
+}
+#copyright h4 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+#copyright h4 span {
+    color: var(--text-white);
+}
+/* copyright ends here */
