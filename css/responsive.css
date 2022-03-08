@@ -2,8 +2,8 @@
 
 @media (min-width: 320px) and (max-width: 575.98px) {
     .form input {
-        text-align: center;
         font-size: 12px;
+        text-align: center;
     }
     #navsection ul {
         background-color: var(--hlt-clr);
