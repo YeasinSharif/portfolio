@@ -380,3 +380,22 @@ a:hover {
     color: var(--text-white);
 }
 /* copyright ends here */
+
+/* scroll top btn css */
+
+#topbtn {
+    background: none;
+    border: none;
+    color:var(--text-white);
+    background-color: var(--hlt-clr);
+    padding: 15px;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+    z-index: 99999;
+}
+
+/* scroll top button css */

@@ -1,15 +1,12 @@
 
 
 @media (min-width: 320px) and (max-width: 575.98px) {
-    .form textarea {
-        text-align: center;
-        
-        font-size:12px;
-    }
-    .form input {
+    
+    #connect .form textarea {
         font-size: 12px;
         text-align: center;
     }
+    
     #navsection ul {
         background-color: var(--hlt-clr);
     }
@@ -202,39 +199,17 @@
     .slider2 {
         justify-content: center !important;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #topbtn {
+        right: 20px;
+    }
 
 
 }
  
 @media (min-width: 576px) and (max-width: 767.98px) {
+    #topbtn {
+        right: 14px;
+    }
     #navsection ul {
         background-color: var(--hlt-clr);
     }
@@ -406,6 +381,9 @@
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    #topbtn {
+        right: 18px;
+    }
     #navsection ul {
         background-color: var(--hlt-clr);
     }
