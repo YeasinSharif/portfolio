@@ -7,7 +7,7 @@ $(function () {
         nextArrow: '<i class="arrow2 far fa-arrow-right"></i>',
         
         fade: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         speed: 1000 
     })
@@ -71,6 +71,37 @@ const typed = new Typed('.test-type', {
     })
 
     /* smooth jump js ends*/
+
+            /* counter up js starts */
+
+    $('#cn1').spincrement({
+        duration: 9000,
+        
+    })
+
+    $('#cn2').spincrement({
+        duration: 9000,
+        
+    })
+
+    $('#cn3').spincrement({
+        duration: 9000,
+        
+    })
+
+    /* counter up js ends */
+
+    /*fixed menu*/
+
+   $(window).on('scroll', function(){
+       if ($(window).scrollTop() > $('#navsection').height()){
+           $('#navsection').addClass('fixed-menu')
+       }else {
+           $('#navsection').removeClass('fixed-menu')
+       }
+   })
+
+   /* fixed menu */
 
 
 

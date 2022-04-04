@@ -68,6 +68,26 @@ a:hover {
 #navsection button {
     background-color: var(--hlt-clr);
     color: var(--text-white);
+    position: relative;
+    z-index: 1;
+}
+#navsection button:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--text-white);
+    height: 100%;
+    width: 0%;
+    border-radius: 0.25rem;
+    transition: all ease-in-out 0.3s;
+    z-index: -1;
+}
+#navsection button:hover {
+    color: var(--hlt-clr);
+}
+#navsection button:hover:before {
+    width: 100%;
 }
 
 /* nav section ends here */
@@ -120,6 +140,8 @@ a:hover {
 }
 .banner-content .button-first {
     background-color: var(--hlt-clr);
+    position: relative;
+    z-index: 1;
 }
 .banner-content a span {
     text-decoration: underline;
@@ -130,18 +152,50 @@ a:hover {
     color: var(--text-white);
 }
 
-.banner-content a:hover {
-    
-    background-color: var(--hlt-clr);
-    color: var(--text-white);
-}
-.banner-content a:hover i {
-    color: var(--text-white);
-    
-}
+
+
 .banner-content .button-first:hover {
-    background: none;
+    color: var(--hlt-clr);
     
+}
+.banner-content .button-first:hover i {
+    color: var(--hlt-clr);
+
+}
+.banner-content .button-first:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: var(--text-white);
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all ease-in-out 0.3s;
+}
+.banner-content .button-first:hover:before {
+    width: 100%;
+}
+.button-second {
+    position: relative;
+    z-index: 1;
+
+}
+.button-second:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--hlt-clr);
+    border-radius: 5px;
+    z-index: -1;
+    transition: all ease-in-out 0.3s;
+}
+.button-second:hover:after {
+    width: 100%;
 }
 
 /* banner section ends here */
@@ -399,3 +453,28 @@ a:hover {
 }
 
 /* scroll top button css */
+
+
+/*fixed menu*/
+#navsection.fixed-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background-color: #222a36dc;
+    width: 100%;
+    animation: smooth .5s;
+
+}
+
+@keyframes smooth {
+    0% {
+        top: -50px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+/*fixed menu*/
